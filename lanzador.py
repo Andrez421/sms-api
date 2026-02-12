@@ -15,7 +15,7 @@ ARCHIVO_EXCEL = "destinatarios.xlsx"
 # ADVERTENCIA: Android puede bloquearte si envías muy rápido.
 # - 5 segundos = ~12 mensajes por minuto (Seguro)
 # - 10 segundos = ~6 mensajes por minuto (Muy Seguro)
-DELAY_SEGUNDOS = 8 
+DELAY_SEGUNDOS = 5 
 
 def cargar_env_desde_archivo(ruta: str = ".env"):
 	"""
@@ -61,7 +61,7 @@ def construir_mensaje(row):
     nombre = row['Nombre']
     variable = row['Variable'] # Puede ser saldo, nota, etc.
     
-    mensaje = f"Hola {nombre}, cordial saludo. Le recordamos: {variable}. Att: Secretaria Academica."
+    mensaje = f"Hola {nombre}, cordial saludo. Le recordamos: {variable}. Att: Admin Educativa CCYS."
     return mensaje
 
 def main():
